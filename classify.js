@@ -17,3 +17,8 @@ const imageClassification = async path => {
     const predictions = await mobilenetModel.classify(image);
     console.log('Classification Results:', predictions);
   }
+
+// calling the function
+if (process.argv.length !== 3) throw new Error('Incorrect arguments: node classify.js <IMAGE_FILE>');
+
+imageClassification(process.argv[2]);
