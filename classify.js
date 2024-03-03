@@ -9,3 +9,11 @@ const readImage = path => {
     const tfimage = tfnode.node.decodeImage(imageBuffer);
     return tfimage;
   }
+
+//   image classification function
+const imageClassification = async path => {
+    const image = readImage(path);
+    const mobilenetModel = await mobilenet.load();
+    const predictions = await mobilenetModel.classify(image);
+    console.log('Classification Results:', predictions);
+  }
