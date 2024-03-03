@@ -1,0 +1,22 @@
+Run the file (classify.js) with an image file as an argument
+
+```node classify.js rabbit.jpg
+```
+
+
+Result should be 
+
+```
+Classification Results: [
+  {
+    className: 'Angora, Angora rabbit',
+    probability: 0.9488762617111206
+  },
+  { className: 'hamster', probability: 0.023957064375281334 },
+  {
+    className: 'guinea pig, Cavia cobaya',
+    probability: 0.016880817711353302
+  }
+]
+
+```
