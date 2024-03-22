@@ -1,4 +1,4 @@
-##TensorFlow Image Classification Application
+**TensorFlow Image Classification Application**
 
 ---
 
